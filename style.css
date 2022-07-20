@@ -7345,11 +7345,7 @@ body .search-modal .close:hover {
   opacity: 0;
   visibility: hidden;
 }
-.rs-project.style3 .owl-nav .owl-next i:before,
-.rs-project.style3 .owl-nav .owl-prev i:before {
-  content: "\f111";
-  font-family: Flaticon;
-}
+
 .rs-project.style3 .owl-nav .owl-next:hover,
 .rs-project.style3 .owl-nav .owl-prev:hover {
   color: #00aacd;
@@ -7358,9 +7354,7 @@ body .search-modal .close:hover {
   right: -50px;
   left: unset;
 }
-.rs-project.style3 .owl-nav .owl-next i:before {
-  content: "\f110";
-}
+
 .rs-project.style3:hover .owl-nav .owl-next,
 .rs-project.style3:hover .owl-nav .owl-prev {
   left: -50px;
