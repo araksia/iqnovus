@@ -178,11 +178,11 @@ $curl2 = curl_init($url);
                             
                              <ul class="banner-btn">
                                 <?php if($header["post_btn_enable"]){ ?>
-                                    <li><a class="readon started" href="<?php echo $root.'ct/ct_list.bix?c='.$id;?>" target="blank"><?php echo $header["post_btn_text"];?>
+                                    <li><a class="readon started" href="<?php echo $root.'ct/ct_a_enter_idea.bix?c='.$id;?>" target="blank"><?php echo $header["post_btn_text"];?>
                                 </a></li>
                                 <?php }?>
                                 <?php if($header["browse_btn_enable"]){ ?>
-                                    <li><a class="readon started" href="<?php echo $root.'ct/ct_a_enter_idea.bix?c='.$id;?>" target="blank"><?php echo $header["browse_btn_text"];?>
+                                    <li><a class="readon started" href="<?php echo $root.'ct/ct_list.bix?c='.$id;?>" target="blank"><?php echo $header["browse_btn_text"];?>
                                 </a></li>
                                 <?php }?>
                                 </ul>
