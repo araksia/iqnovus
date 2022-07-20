@@ -3,7 +3,7 @@
 function getToken()
 {
     try {
-        $client_id = 'CLIENT_ID';
+$client_id = 'CLIENT_ID';
 $redirect_uri = 'HOME';
 $client_secret = 'CLIENT_SECRET';
 $grant_type='password';

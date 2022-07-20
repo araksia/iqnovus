@@ -176,13 +176,13 @@ $curl2 = curl_init($url);
                                 <?php echo $header["subline"];?>
                              </p>
                             
-                                <ul class="banner-btn">
+                             <ul class="banner-btn">
                                 <?php if($header["post_btn_enable"]){ ?>
-                                    <li><a class="readon started" href="about.html"><?php echo $header["post_btn_text"];?>
+                                    <li><a class="readon started" href="<?php echo $root.'ct/ct_list.bix?c='.$id;?>" target="blank"><?php echo $header["post_btn_text"];?>
                                 </a></li>
                                 <?php }?>
                                 <?php if($header["browse_btn_enable"]){ ?>
-                                    <li><a class="readon started" href="about.html"><?php echo $header["browse_btn_text"];?>
+                                    <li><a class="readon started" href="<?php echo $root.'ct/ct_a_enter_idea.bix?c='.$id;?>" target="blank"><?php echo $header["browse_btn_text"];?>
                                 </a></li>
                                 <?php }?>
                                 </ul>
@@ -209,7 +209,7 @@ $curl2 = curl_init($url);
                                     </div>
                                     <div class="cloud">
                                     <?php  foreach ($tags as &$value) {?>
-                                        <a data-weight="<?php echo $value["tagCount"]; ?>" href="#"><?php echo $value["name"]; ?></a>
+                                        <a data-weight="<?php echo $value["tagCount"]; ?>" href="<?php echo $root.'ct/c_list.php?a=OD10188&t_id='.$value["id"];?>" target="_blankc"><?php echo $value["name"]; ?></a>
             
                                     <?php }?>
                                     </div>
