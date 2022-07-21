@@ -40,17 +40,17 @@ _Below is an example of how you can instruct your audience on installing and set
    git clone https://github.com/your_username_/Project-Name.git
    ```
 3. Go to Brightidea's developer portal (https://developer.brightidea.com/) and create new app in order to get client_id & client_secret.
-3. Go to authentication.php file and replace following variables
+4. 
+5. Go to authentication.php file and replace following variables
    ```js
    CLIENT_ID, HOME, CLIENT_SECRET, USERNAME, PASSWORD
    ```
-   *USERNAME & PASSWORD given by administrator
-4. Go to index.php file and replace following variables
+5. Go to index.php file and replace following variables
    ```js
    HOME (yousiteurl.gr), CAMPAIGN_ID(one or more), BRIGHTIDEA_URL
    ```
   
-5. Go to campaign.php file and replace following variables
+6. Go to campaign.php file and replace following variables
    ```js
    HOME, BRIGHTIDEA_URL
    ```
