@@ -24,17 +24,7 @@ if($id && !empty($bearer)){
     $root= 'BRIGHTIDEA_URL/';
 
 
-//call tags
-$tagsurl = "BRIGHTIDEA_URL/api3/tag";
-$curl2 = curl_init($url);
 
-    curl_setopt($curl2, CURLOPT_URL, $tagsurl);
-    curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
-    $resp2 = curl_exec($curl2);
-    curl_close($curl2);
-    $tag = json_decode($resp2, true);
-    $tags = $tag['tag_list'];
     
 }
 
@@ -200,36 +190,13 @@ $curl2 = curl_init($url);
             <div class="rs-inner-blog pt-120 pb-120 md-pt-90 md-pb-90">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 order-last">
-                            <div class="widget-area">
-                                <?php if(!empty($tags)){ ?> 
-                                <div class="categories mb-50">
-                                    <div class="widget-title">
-                                        <h3 class="title">Tags</h3>
-                                    </div>
-                                    <div class="cloud">
-                                    <?php  foreach ($tags as &$value) {?>
-                                        <a data-weight="<?php echo $value["tagCount"]; ?>" href="<?php echo $root.'ct/c_list.php?a=OD10188&t_id='.$value["id"];?>" target="_blankc"><?php echo $value["name"]; ?></a>
-            
-                                    <?php }?>
-                                    </div>
-                                </div>
-                                <?php } ?>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 pr-35 md-pr-15">
-                            <div class="row">
-                                <div class="col-lg-12 mb-50">
+
                                     <div class="blog-item">
                                         <div class="blog-content">
                                             <div class="blog-desc">   
                                                 <?php echo $campaign["description"]?>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            
+                       
                             </div>
                         </div>
                     </div> 
